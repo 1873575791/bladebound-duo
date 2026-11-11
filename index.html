@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bladebound Duo — 一款原创的双人同屏像素风横版动作游戏。"
+    />
+    <title>Bladebound Duo | 刃誓双雄</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="brand" aria-label="游戏标题">
+        <span class="brand__rune">◆</span>
+        <div>
+          <p>AN ORIGINAL CO-OP BRAWLER</p>
+          <h1>BLADEBOUND <em>DUO</em></h1>
+        </div>
+        <span class="brand__rune">◆</span>
+      </header>
+
+      <section class="screen-frame" aria-label="游戏画面">
+        <canvas id="game" width="960" height="540" tabindex="0">
+          你的浏览器不支持 Canvas，请使用较新的 Chrome、Edge、Firefox 或 Safari。
+        </canvas>
+        <div class="scanlines" aria-hidden="true"></div>
+      </section>
+
+      <section class="controls" aria-label="操作说明">
+        <div class="controls__player controls__player--one">
+          <span class="player-badge">P1</span>
+          <div><b>WASD</b><small>移动 / 跳跃</small></div>
+          <div><b>F</b><small>攻击</small></div>
+          <div><b>G</b><small>闪避</small></div>
+        </div>
+        <div class="controls__meta">
+          <b>ENTER</b><small>开始 · 暂停</small>
+        </div>
+        <div class="controls__player controls__player--two">
+          <span class="player-badge">P2</span>
+          <div><b>方向键</b><small>移动 / 跳跃</small></div>
+          <div><b>K</b><small>攻击</small></div>
+          <div><b>L</b><small>闪避</small></div>
+        </div>
+      </section>
+
+      <footer>
+        <span>原创代码与像素美术 · 无外部素材</span>
+        <button id="soundToggle" type="button" aria-pressed="false">声音：开</button>
+      </footer>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
